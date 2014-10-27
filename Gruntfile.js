@@ -1,11 +1,12 @@
 module.exports = function(grunt) {
 
+  var srcFiles = [ "exercises/*.js", "tests/*.js" ];
   grunt.initConfig({
     jshint: {
-      files: [ "exercises/*.js", "tests/*.js" ]
+      files: srcFiles
     },
     jscs: {
-      src: "exercises/*.js",
+      src: srcFiles,
       options: {
         preset: "jquery"
       }
