@@ -13,6 +13,14 @@ describe("Functional", function() {
     expect(result).to.equal("waldorf salad");
   });
 
+  it("should find the largest numbers", function() {
+    var testData = [ [ 1, 2 ],  [ 4, 10 ],  [ 15, 1, 3 ],  [ 0 ] ],
+        result = functional.largestNums(testData);
+
+    // use eql to compare objects
+    expect(result).to.eql([ 2, 10, 15, 0 ]);
+  });
+
   it("should return filtered dates", function() {
     var dateArray = [],
         lower = new Date("2001/01/01"),
@@ -34,14 +42,10 @@ describe("Functional", function() {
     expect(result).to.eql(answer);
   });
 
-  it("should find the largest numbers", function() {
-    var testData = [ [ 1, 2 ],  [ 4, 10 ],  [ 15, 1, 3 ],  [ 0 ] ],
-        result = functional.largestNums(testData);
-
-    // use eql to compare objects
-    expect(result).to.eql([ 2, 10, 15, 0 ]);
-  });
-
+  // this test is pending because i didn't give it a
+  // function argument.
+  // TODO: write a test for the custom method you wrote
+  // in exercises/functional.js
   it("should test the exercise you wrote yourself");
 
 });
