@@ -28,6 +28,7 @@ exercises.filterDates = function(dates, lowerBound, upperBound){
 // 8 points (including the test)
 // make up your own exercise like those above. implement it and
 // write a test for it in tests/functional.spec.js.
+// for 2 extra credit points, use _.reduce()
 // exercises.TODO = function(array){
 // }
 
