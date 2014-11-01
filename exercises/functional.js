@@ -17,15 +17,15 @@ exercises.wheresWaldo = function() {
         return false;
       }
   });
-  if (found == null) {
-    return 'I could not find Waldo!'
+  if (found === null) {
+    return 'I could not find Waldo!';
   }
   else {
     return found;
   }
 };
 
-console.log(exercises.wheresWaldo("waldrf", "bobwald"));
+console.log(exercises.wheresWaldo("waldorf", "bobwald"));
 // 8 points
 // given an array of arrays (all holding numbers), return an
 // array holding the largest number in each sub-array.
@@ -71,6 +71,16 @@ exercises.filterDates = function(dates, lowerBound, upperBound) {
 };
 
 console.log(exercises.filterDates(dateArray, lower, upper));
+
+var numberArray = [1, 2, 3, 4, 5];
+
+exercises.addNumbers = function(numberArray) {
+  return _.reduce(numberArray, function(sum, num) {
+    return sum + num;
+  }, 0);
+}
+
+console.log(exercises.addNumbers(numberArray));
 
 // 16 points (including the test)
 // make up your own exercise like those above. implement it and
