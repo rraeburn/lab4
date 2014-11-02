@@ -47,7 +47,7 @@ describe("Functional", function() {
   // TODO: write a test for the custom method you wrote
   // in exercises/functional.js
   it("should test the exercise you wrote yourself", function() {
-    var testNumbers = [1, 2, 3, 4, 5],
+    var testNumbers = [ 1, 2, 3, 4, 5 ],
       result = functional.addNumbers(testNumbers);
 
       expect(result).to.equal(15);
